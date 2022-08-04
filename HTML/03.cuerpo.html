@@ -1,0 +1,170 @@
+<!doctype html>
+
+<html>
+
+<!--=====================================
+CABEZA DEL DOCUMENTO
+======================================-->
+
+<head>
+
+    <!-- ETIQUETA META CON ATRIBUTO CHARSET PARA CODIFICAR LOS CARACTERES -->
+
+	<meta charset="utf-8">
+
+    <!-- ETIQUETA META CON ATRIBUTO AUTHOR PARA DEFINIR EL AUTOR DE LA PÁGINA -->
+    
+    <meta name="author" content="Tutoriales a tu alcance">
+
+    <!-- ETIQUETA META CON ATRIBUTO NAME-DESCRIPTION PARA DESCRIBIR LA PÁGINA -->
+    
+    <meta name="description" content="Acá se pone la descripción del sitio">
+
+    <!-- ETIQUETA META CON ATRIBUTO NAME-KEYWORDS PARA PONER PALABRAS CLAVES -->
+    
+    <meta name="keywords" content="tutoriales, html, desarrollo web">
+
+    <!-- ETIQUETA PARA PONER EL TÍTULO DE LA PÁGINA -->
+    
+    <title>Estructura del cuerpo</title>
+
+    <!-- ETIQUETA PARA VINCULAR PROPIEDADES EXTERNAS: EL ICONO DE LA PÁGINA Y HOJAS DE ESTILO -->
+    
+    <link rel="icon" href="file:///D|/Documentos/DISEÑO WEB/Tutorial/img/icono.png">	
+
+</head>
+
+<!--=====================================
+CUERPO DEL DOCUMENTO
+======================================-->
+    
+<body>
+
+    <!-- ETIQUETA PARA CABEZOTE -->
+   
+	<header>Cabezote</header> <!-- La parte superior de la página, donde puede ir el logotipo, iconos de redes, etc. -->
+
+    <!-- ETIQUETA PARA BARRAS DE NAVEGACIÓN -->
+    
+    <nav>Barra de navegación</nav> <!-- Puede ir el menú y botonera de navegación -->
+
+    <!-- ETIQUETA PARA CREAR SECCIONES -->
+    
+	<section>Sección principal</section>
+
+    <!-- ETIQUETA PARA CREAR COLUMNAS-->
+    
+    <aside>Columna</aside>
+
+    <!-- ETIQUETA PARA CREAR ARTÍCULOS -->
+    
+    <article>Artículo</article>
+
+    <!-- ETIQUETA PARA TÍTULOS -->
+    
+    <h1>Título</h1>
+    <h2>Título</h2>
+    <h3>Título</h3>
+    <h4>Título</h4>
+    <h5>Título</h5>
+    <h6>Título</h6>
+
+    <!-- ETIQUETA PARA CREAR PÁRRAFOS Y SALTO DE LÍNEAS -->
+    
+	<p>Esto es un <b>párrafo</b> <!-- <b></b> es para negritas -->, <br>esto es otro párrafo</p> <!-- <br> es una etiqueta simple para salto de línea -->
+	
+	
+    
+    <!-- ETIQUETA PARA CREAR DIVISIONES -->
+
+    <hr> <!-- <hr> es para interlineado en la página, crea una línea divisoria -->
+
+    <!-- ETIQUETA PARA CREAR VÍNCULOS -->
+    
+    <a href="#">Vínculo</a> <!-- <a href="http://">Palabra del vínculo</a> es para hacer vínculos
+
+    
+    <!-- ETIQUETA PARA LLAMAR IMÁGENES EXTERNAS -->
+    
+    <figure> <!-- Etiqueta auxiliar para estructurar la etiqueta de imagen y que no quede flotando en el aire-->
+        <img src="file:///D|/Documentos/DISEÑO WEB/Tutorial/img/imagen.jpg"> <!-- De esta manera aparece la imagen incertada en la web tal cual es, con las medidas de la original y todo -->
+    </figure>
+	
+    <figcaption>Pie de página a la imagen</figcaption> <!-- Otra etiqueta auxiliar para la imagen-->
+
+    <!-- ETIQUETA PARA CREAR LISTAS NUMÉRICAS -->
+    
+    <ol> <!-- Traduce lista organizada/ numérica, asigna números a cada item de manera descendente-->
+        <li>Carro</li> <!-- Marca cada item de la lista-->
+        <li>Barco</li>
+        <li>Avión</li>
+    </ol>
+
+    <!-- ETIQUETA PARA CREAR LISTAS NO NUMÉRICAS -->
+    
+    <ul> <!-- Aparece la lista organizada como items sin número (con símbolos adelante) -->
+        <li>Carro</li>
+        <li>Barco</li>
+        <li>Avión</li>
+    </ul>
+
+    <!-- ETIQUETA PARA CENTRAR -->
+
+    <center>Estoy en el centro</center>
+
+    <!-- ETIQUETA PARA SIMULAR CÓDIGO -->
+
+    <code>Esto es texto codificado</code>
+
+    <!-- ETIQUETA PARA CREAR TABLAS -->
+    
+    <table border="1"> <!-- Border se puso para que haya una línea de grosor "1" para que tenga mayor apariencia de tabla, sin el border se ven los espacios vacíos entre las palabras -->
+        
+        <thead> <!-- Esto separar las filas de encabezado del cuerpo de la tabla, las hace más negritas-->
+        
+          <tr> <!-- Estiqueta para las filas, DENTRO de la fila hay que crear las columnas de la tabla-->
+            <th>MES</th> <!-- Columna-->
+            <th>AHORRO</th> <!-- Columna-->
+          </tr>
+          
+        </thead>
+         
+        <tbody> <!-- El cuerpo de la tabla-->
+         
+           <tr>
+            <td>Enero</td> <!-- Las columnas en el cuerpo de la tabla se escriben "TD"-->
+            <td>$100</td>
+          </tr>
+          
+           <tr>
+            <td>Febrero</td>
+            <td>$200</td>
+          </tr>
+          
+        </tbody>
+    
+    </table>
+
+    <!-- ETIQUETA PARA CREAR MEDIDAS Y ESTADÍSTICAS <meter> Y <progress> -->
+    
+    <h1>Resultados del Examen</h1>
+    <p>Carlos: <meter value="94" min="0" max="100" high="90"></meter></p>
+    <p>Andrés: <meter value="60" min="0" max="100" high="90"></meter></p>
+    <p>Ana: <meter value="85" min="0" max="100" high="90"></meter></p>
+    <p>Pedro: <meter value="45" min="0" max="100" high="90"></meter></p>
+	<!-- Los atributos dentro de meter aparecen como un gráfico, lo que supere el atributo de HIGH se ve de un color diferente porque "es superior a la media"-->
+
+    <h2>Resultados de Ventas</h2>
+    <p>Fenero: <progress value="94" min="0" max="100"></progress></p>
+    <p>Febrero: <progress value="60" min="0" max="100"></progress></p>
+    <p>Marzo: <progress value="85" min="0" max="100"></progress></p>
+    <p>Abril: <progress value="45" min="0" max="100"></progress></p>
+	<!-- Progress es una etiqueta auxiliar, se usa porque en algunos buscadores como safari o navegadores para dispositivos moviles, no se lee la etiqueta "METER"-->
+
+    <!-- ETIQUETA PARA CREAR PIE DE PÁGINA -->
+
+	<footer>Este es el pie de página</footer> <!-- Sirve para derechos de autor/reservados, fecha de la creacion de la pagina, contacto de la empresa, etc. -->
+
+</body>
+
+</html>
