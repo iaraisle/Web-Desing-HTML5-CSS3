@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Propiedades de Color</title>
+
+<style>
+
+.grupo{ /* Características de el grupo */
+	width:200px;
+	height:200px;
+	margin:20px;
+	}
+	
+#c1{ /* Caracteristicas individuales de cada caja */
+	background:blueviolet;	
+	}
+	
+#c2{ /* Colores hexadecimales (rgb = red green blue), los primeros 2 son rojo, "00" es apagado "ff" es prendido, el segundo par es verde, el ultimo par es azul.
+Los números van del "0" al "9" y de la "a" a la "f" 
+Rojo y verde encendidos dan amarillo y todos los colores encendidos dan blanco, todos apagados dan negro*/
+	background:#aa66ff;	
+	
+	}
+	
+/*http://html-color-codes.info/codigos-de-colores-hexadecimales/*/
+
+#c3{ /* Sintaxis rgb, la "a" al final hace que se pueda indicar la transparencia
+Los numeros van del 0= negro al 255= blanco/color luz 
+La transparencia va de 0= transparente a 1= sólido*/
+	background:rgba(180,0,70,.5);
+	}
+
+
+</style>
+
+</head>
+
+<body>
+
+<div id="c1" class="grupo"></div>
+
+<div id="c2" class="grupo"></div>
+
+<div id="c3" class="grupo"></div>
+
+</body>
+</html>
